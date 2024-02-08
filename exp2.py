@@ -29,7 +29,7 @@ def play_beep_sound():
     # Initialize pygame mixer
     pygame.mixer.init()
 
-    # Load the beep sound file
+    # Loading sound file
     filename = "C:\\Users\\rajte\\Music\\mixkit-censorship-beep-1082.wav"
     pygame.mixer.music.load(filename)
 
@@ -48,14 +48,14 @@ if __name__ == "__main__":
     countdown_minutes = st.number_input("Enter Countdown Minutes:", min_value=0, max_value=59, value=0)
     countdown_seconds = st.number_input("Enter Countdown Seconds:", min_value=0, max_value=59, value=0)
 
-    # Added a manual start button
+    # Added a start button
     manual_start = st.button("Start Countdown Manually")
 
     if activate_countdown or manual_start:
         if activate_countdown:
             st.write("Say 'start' to start the countdown!")
 
-        # Initialize speech recognition recognizer
+        # Initializing speech recognition 
         recognizer = sr.Recognizer()
 
         try:
