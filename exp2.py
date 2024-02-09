@@ -30,7 +30,7 @@ def play_beep_sound():
     pygame.mixer.init()
 
     # Loading sound file
-    filename = "mixkit-censorship-beep-1082.wav"
+    filename = "\\mixkit-censorship-beep-1082.wav"
     pygame.mixer.music.load(filename)
 
     # Play the beep sound
