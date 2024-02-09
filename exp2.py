@@ -36,7 +36,7 @@ def play_beep_sound():
     # Play the beep sound
     pygame.mixer.music.play()
 
-main():
+def main():
     st.title("Speech-Activated Countdown Timer ")
 
     with st.sidebar:
@@ -79,5 +79,5 @@ main():
             st.warning("Speech recognition could not understand the audio.")
         except sr.RequestError as e:
             st.error(f"Could not request results from Google Speech Recognition service; {e}")
-    if __name__ == "__main__":
-        main()
+if __name__ == "__main__":
+    main()
