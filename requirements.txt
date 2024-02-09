@@ -2,4 +2,3 @@ streamlit==1.31.0
 SpeechRecognition
 pyttsx3==2.90
 pygame==2.5.2
-pyaudio==0.2.14
